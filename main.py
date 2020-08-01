@@ -19,12 +19,14 @@ import tweepy
 
 import requests
 
+#for the credentioals
+import config
 main_url = " https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apiKey=4dbc17e007ab436fb66416009dfb59a8"
 # personal details
-consumer_key ="HSpcnhLn1vAZkipUUxRh6uWPh"
-consumer_secret ="HFgIHu0gG2eS4SDpsMitN2P0sVHUTXToUxDgfrtg61pj1tol2a"
-access_token ="1178619424905076741-aNhvEhvO4hE3Zjn39pBXUdF11WR3sR"
-access_token_secret ="LyZ3JE8ZfoliL7KUda8ISN4txjy8Mn1xzUWcEOEjTpqze"
+consumer_key = config.consumer_key
+consumer_secret = config.consumer_secret
+access_token = config.access_token
+access_token_secret = config.access_token_secret
 
 # authentication of consumer key and secret
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)

@@ -3,3 +3,4 @@ venv
 models
 gpt2-pytorch_model.bin
 __pycache__
+config.py
